@@ -18,7 +18,6 @@ public class Transaccion {
 		this.exitosa=true;
 	}
 
-    
 	//METODOS GET Y SET
 	public String getTipo() {
 		return tipo;
@@ -52,7 +51,6 @@ public class Transaccion {
 		this.exitosa = exitosa;
 	}
     
-    
 	//METODO MOSTRAR DETALLE 
 	public void mostrarDetalle() {
 		System.out.println("---- Detalle de Transacción ----");
@@ -74,5 +72,11 @@ public class Transaccion {
 		System.out.println("Monto total con comision: "+montoTotal);		
 	}
 
+	//METODO MARCAR FALLIDA 
+	public void marcarFallida() {
+		exitosa=false;
+		System.out.println("Transacción marcada como fallida.");
+		System.out.println("Monto afectado: "+monto);
+	}
 
 }

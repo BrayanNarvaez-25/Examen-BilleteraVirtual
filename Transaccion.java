@@ -65,4 +65,14 @@ public class Transaccion {
 			System.out.println("Estado: Fallida");
 		}		
 	}
+    
+	//METODO APLICAR COMISION SEGUN PORCENTAJE
+	public void aplicarComision(double porcentaje) {
+		double comision=(monto*porcentaje)/100;
+		double montoTotal=comision+monto;
+		System.out.println("Comision( "+porcentaje+" %) : "+comision);
+		System.out.println("Monto total con comision: "+montoTotal);		
+	}
+
+
 }

@@ -12,4 +12,16 @@ public class Contacto {
         this.favorito = false;
  
 }
+ public void mostrarContacto() {
+        String estadoFavorito = favorito ? "Favorito" : "Sin marcar";
+        System.out.println("=== Contacto ===");
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Cuenta: " + cuentaDestino);
+        System.out.println("Banco: " + banco);
+        System.out.println("Favorito: " + estadoFavorito);
+        System.out.println();
+    }
+
+
+
 }

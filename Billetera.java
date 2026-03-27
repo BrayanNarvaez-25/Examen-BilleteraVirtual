@@ -19,4 +19,9 @@ public class Billetera {
 		String estadoTexto = (this.activa) ? "Sí" : "No";
 	    System.out.println("Activa: " + estadoTexto);
 	}
+    public void depositar(double monto) {
+		this.saldo += monto;
+		System.out.println("\nDeposito exitoso: +$"+monto + 
+				"\nNuevo saldo: $"+this.saldo);
+	}
 }

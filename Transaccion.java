@@ -51,4 +51,18 @@ public class Transaccion {
 	public void setExitosa(boolean exitosa) {
 		this.exitosa = exitosa;
 	}
+    
+    
+	//METODO MOSTRAR DETALLE 
+	public void mostrarDetalle() {
+		System.out.println("---- Detalle de Transacción ----");
+		System.out.println("Tipo:" +tipo);
+		System.out.println("Monto: "+monto);
+		System.out.println("Descripción: "+descripcion);
+		if(exitosa) {
+			System.out.println("Estado: Exitosa");
+		}else {
+			System.out.println("Estado: Fallida");
+		}		
+	}
 }

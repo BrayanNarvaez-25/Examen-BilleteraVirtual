@@ -12,7 +12,7 @@ public class Contacto {
         this.favorito = false;
  
 }
- public void mostrarContacto() {
+    public void mostrarContacto() {
         String estadoFavorito = favorito ? "Favorito" : "Sin marcar";
         System.out.println("=== Contacto ===");
         System.out.println("Nombre: " + nombre);
@@ -21,11 +21,13 @@ public class Contacto {
         System.out.println("Favorito: " + estadoFavorito);
         System.out.println();
     }
-     public void marcarFavorito() {
+    public void marcarFavorito() {
         this.favorito = true;
         System.out.println(nombre + " agregado a favoritos.");
         System.out.println();
     }
+
+    
 
 
 

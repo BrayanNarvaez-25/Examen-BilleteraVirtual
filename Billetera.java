@@ -11,4 +11,12 @@ public class Billetera {
 		this.saldo = saldo;
 		this.activa = true;
 	}
+    public void mostrarInfo() {
+		System.out.println("=== Billetera Digital ===");
+		System.out.println("\nPropietario: "+this.propietario +
+				"\nCuenta: " + this.numeroCuenta +
+				"\nSaldo: $" + this.saldo);
+		String estadoTexto = (this.activa) ? "Sí" : "No";
+	    System.out.println("Activa: " + estadoTexto);
+	}
 }

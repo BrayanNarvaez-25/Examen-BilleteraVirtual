@@ -24,4 +24,14 @@ public class Billetera {
 		System.out.println("\nDeposito exitoso: +$"+monto + 
 				"\nNuevo saldo: $"+this.saldo);
 	}
+    public void retirar(double monto) {
+		if(monto <= this.saldo) {
+			this.saldo -= monto;
+			System.out.println("\nRetiro exitoso: -$"+monto+
+					"\nNuevo Saldo: $"+this.saldo);
+		}else {
+			System.out.println("Fondos insuficientes. \nSaldo actual: $"
+					+ this.saldo);
+		}
+	}
 }
